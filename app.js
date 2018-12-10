@@ -3,9 +3,9 @@ function toWeirdCase(string){
 	var weirdArray = [];
 //	console.log(wordsArray);
 //	var firstWord = wordsArray[0];
-	for(j = 0; j < wordsArray.length; j++){
+	for(var j = 0; j < wordsArray.length; j++){
 		var result = "";
-		for(i = 0; i < wordsArray[j].length; i++){
+		for(var i = 0; i < wordsArray[j].length; i++){
 			if(i % 2 == 0){
 				result = result.concat(wordsArray[j][i].toUpperCase());
 			}
@@ -16,7 +16,7 @@ function toWeirdCase(string){
 		weirdArray.push(result);
 		console.log(result);
 	}
-	weirdString = weirdArray.toString();
+	var weirdString = weirdArray.toString();
 	weirdString = weirdString.replace(/,/g, ' ');
 	return weirdString;
 }
